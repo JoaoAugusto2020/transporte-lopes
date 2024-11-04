@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    
+    <link rel="icon" type="image/x-icon" href="/imagens/logotipos/logotipo-branco.png">
     <title>Transporte Lopes</title>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div>
-            <a href="index.html"><img src="./imagens/logotipos/logotipo-preto.png" alt="logotipo" height="100"></a>
-        </div>
         <nav>
-            <a href="./paginas/alugar.html"><input type="button" value="Alugar Veíuclo"></a>
-            <a href="./paginas/catalogo.html"><input type="button" value="Catálogo"></a>
-            <a href="./paginas/sobre.html"><input type="button" value="Sobre nós"></a>
+            <a href="index.html"><img src="./imagens/logotipos/logotipo-branco.png" alt="logotipo" id="logotipo"></a>
+            
+            <div>
+                <a href="./paginas/alugar.html" class="nav-link">Alugar Veículo</a>
+                <a href="./paginas/catalogo.html" class="nav-link">Catálogo</a>
+                <a href="./paginas/sobre.html" class="nav-link">Sobre nós</a>
+            </div>
+    
+            <div class="autenticar">
+                <a href="./paginas/autenticar/registrar.html"><button type="button" class="registrar">Registrar</button></a>
+                <a href="./paginas/autenticar/entrar.html"><button type="button" class="entrar">Entrar</button></a>
+            </div>
         </nav>
-
-        <!-- autenticar -->
-        <div>
-            <a href="./paginas/autenticar/registrar.html"><input type="button" value="Registrar"></a>
-            <a href="./paginas/autenticar/entrar.html"><input type="button" value="Entrar"></a>
-        </div>
     </header>
 
     <!-- Corpo -->
@@ -42,30 +44,36 @@
     <!-- Rodapé -->
     <footer>  
         <div class="img-rodape">   
-            <img src="imagens/github.png" style="margin-left: 60px;">
-            <img src="imagens/instagram.png">
-            <img src="imagens/twitter.png">
-            <img src="imagens/email.png">
+            <img src="imagens/icones/github.svg">
+            <img src="imagens/icones/instagram.svg">
+            <img src="imagens/icones/twitter.svg">
+            <img src="imagens/icones/email.svg">
         </div>  
            
-        <ul>
-            <p><b>Caso de uso</b> <br></p>
-            <li>Máquinas agrícolas</li>
-            <li>Grãos</li>
-            <li>Adubos</li>
-            <li>Silagem</li>
-        </ul>
+        <div>
+            <ul>
+                <p><b>Caso de uso</b> <br></p>
+                <li>Máquinas agrícolas</li>
+                <li>Grãos</li>
+                <li>Adubos</li>
+                <li>Silagem</li>
+            </ul>
+        </div>
         
-        <ul>
-            <p><b>Explorar</b> <br></p>
-            <li>Caçambas</li>
-            <li>Pranchas</li>
-        </ul>
+        <div>
+            <ul>
+                <p><b>Explorar</b> <br></p>
+                <li><a href="./paginas/cacamba.html">Caçambas</a></li>
+                <li><a href="./paginas/prancha.html">Pranchas</a></li>
+            </ul>
+        </div>
          
-        <ul>
-            <p><b>Recursos</b> <br></p>
-            <li>Manual</li>
-        </ul>
+        <div>
+            <ul>
+                <p><b>Recursos</b> <br></p>
+                <li>Manual</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
