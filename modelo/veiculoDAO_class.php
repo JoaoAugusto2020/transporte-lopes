@@ -130,6 +130,45 @@ class VeiculoDAO
 		}
 	}
 
+	public function listarDisponiveis($query = null)
+	{
+		//se não recebe parâmetro (ou seja, uma consulto personalizada)
+		//$query recebe nulo
+		try {
+			if ($query == null) {
+				$dados = $this->con->query("SELECT * FROM veiculo WHERE locacao = 'Disponível'");
+				//dataset (conjunto de dados) com todos os dados
+				//query() é função PDO, executa SQL
+			} else {
+				$dados = $this->con->query($query);
+				//se listar receber parâmetro este será uma SQL 
+				//SQL específica
+			}
+			$lista = array(); //crio chamando função array()
+
+			/*for($i = 0; $i<$dados.lenght; $i++){
+				$c->setNome($dados[i][1]);
+			}*/
+			
+			foreach ($dados as $linha) {
+				//percorre linha a linha de dados e coloca cada registro
+				//na variável linha (que é um vetor)
+				$v = new Veiculo();
+				$v->setIdveiculo($linha["idveiculo"]);
+				$v->setNome($linha["nome"]);
+				$v->setMarca($linha["marca"]);
+				$v->setTipo($linha["tipo"]);
+				$v->setCapacidade($linha["capacidade"]);
+				$v->setLocacao($linha["locacao"]);
+				$lista[] = $v;
+			}
+			return $lista;
+			
+		} catch (PDOException $ex) {
+			echo "Erro: " . $ex->getMessage();
+		}
+	}
+
 	//exibir 
 	public function exibir($idveiculo)
 	{

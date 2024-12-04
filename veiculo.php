@@ -23,6 +23,10 @@ if(isset($_GET["fun"])){
 		include_once("controle/veiculo/ListarVeiculo_class.php");
 		$pag = new ListarVeiculo();
 		
+	} elseif($fun == "listarDisponiveis"){
+		include_once("controle/veiculo/ListarDisponiveisVeiculo_class.php");
+		$pag = new ListarDisponiveisVeiculo();
+		
 	}  elseif($fun == "exibir") {
 		include_once("controle/veiculo/ExibirVeiculo_class.php");
 		$pag = new ExibirVeiculo();

@@ -22,7 +22,7 @@
             
             <div>
                 <a href="veiculo.php?fun=listar" class="nav-link">Catálogo</a>
-                <a href="veiculo.php?fun=alugar" class="nav-link">Alugar Veículo</a>
+                <a href="veiculo.php?fun=listarDisponiveis" class="nav-link">Alugar Veículo</a>
                 <a href="index.php?fun=sobre" class="nav-link">Sobre Nós</a>
                 <a href="index.php?fun=administrativo" class="nav-link">Administrativo</a>
             </div>
