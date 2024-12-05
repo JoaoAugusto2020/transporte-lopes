@@ -17,7 +17,7 @@ class CadastrarUsuario{
 			$dao = new UsuarioDao();
 			$dao->cadastrar($u);
 
-			$status = "Usuario " . $u->getNomeCompleto() . " CADASTRADO com sucesso.";
+			$status = "Usuario " . mb_strtoupper($u->getNomeCompleto(), 'UTF-8') . " cadastrado com sucesso.";
 
 			$lista = $dao->listar();
 			include_once("visao/usuario/listaUsuario.php");

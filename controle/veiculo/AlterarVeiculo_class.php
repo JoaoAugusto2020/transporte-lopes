@@ -8,8 +8,10 @@ class AlterarVeiculo{
 			//enviar é o botão de submit
 
 			$v = new Veiculo();
+
 			$v->setIdveiculo($_POST["id"]); //o id é fornecido por um campo hidden
-			$v->setNome($_POST["nome"]);
+			$nomeModificado = "{$_POST["tipo"]} {$_POST["marca"]} {$_POST["capacidade"]}L";
+			$v->setNome($nomeModificado); // $v->setNome($_POST["nome"]);
 			$v->setMarca($_POST["marca"]);
 			$v->setTipo($_POST["tipo"]);
 			$v->setCapacidade($_POST["capacidade"]);
@@ -18,7 +20,8 @@ class AlterarVeiculo{
 			$dao = new VeiculoDAO();
 			$dao->alterar($v);
 
-			$status = "Veiculo " . $v->getNome() .  " ALTERADO com sucesso.";
+			
+			$status = "Veiculo " . mb_strtoupper($v->getNome(), 'UTF-8') .  " alterado com sucesso.";
 
 			$lista = $dao->listar();
 			include_once("visao/veiculo/listaVeiculo.php");

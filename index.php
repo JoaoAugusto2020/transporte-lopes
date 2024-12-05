@@ -8,8 +8,8 @@ include_once("visao/cabecalho.php");
 if(isset($_GET["fun"])){
 	$fun = $_GET["fun"];
 	
-	if($fun == "administrativo"){		
-		include_once("visao/paginas/administrativo.html");		
+	if($fun == "adm"){		
+		include_once("visao/paginas/adm.html");		
 	} else if($fun == "entrar"){
 		include_once("visao/paginas/entrar.html");
 	} else {

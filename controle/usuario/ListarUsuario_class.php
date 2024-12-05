@@ -9,7 +9,8 @@
 			//array de objetos do tipo veiculo
 			
 			if($lista==NULL){
-				echo "<h1> Não há usuários cadastrados! <h1/>";
+				echo "<h1 class='titulo'> Não há usuários cadastrados! </h1>";
+				echo "<div class='espaco-grande'></div>";
 			}else{
 				include_once("visao/usuario/listaUsuario.php");
 			}		

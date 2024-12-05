@@ -130,6 +130,7 @@ class VeiculoDAO
 		}
 	}
 
+	//listarDisponiveis
 	public function listarDisponiveis($query = null)
 	{
 		//se não recebe parâmetro (ou seja, uma consulto personalizada)

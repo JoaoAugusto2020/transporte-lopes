@@ -6,7 +6,6 @@ if(isset($_GET["fun"])){
 	$fun = $_GET["fun"];
 	
 	if($fun == "cadastrar"){
-		
 		include_once("controle/veiculo/CadastrarVeiculo_class.php");
 		$pag = new CadastrarVeiculo();
 		

@@ -1,11 +1,16 @@
-
-    <div id="container">
-        <form action="" id="box">
+    <div class="box-login centralizar-div">
+        <form action="" class="form-login">
             <h1>Entrar</h1>
-            <input type="text" placeholder="E-mail ou CPF">
-            <input type="password" placeholder="Senha">
-            <button type="submit">Entrar</button>
-            <p id="errorMessage" style="color: red; display: none">Usuário ou senha inválidos</p> </p>
-            <p>Não possui uma conta? <a href="usuario.php?fun=cadastrar" id="link">Cadastre-se aqui</a></p>
+            
+            <input class="input-simples" type="text" placeholder="E-mail ou CPF"> <br>
+            <div class="input-box input-box-simples">
+                <input class="input-simples" type="password" name="senha" id="senha" placeholder="Senha"/>
+                <img src="visao/imagens/icones/olho-aberto.png" id="olho">
+            </div> <br><br>
+
+            <button class="btn-escuro" type="submit">Entrar</button> <br><br>
+            
+            <!-- <p id="errorMessage" style="color: red; display: none">Usuário ou senha inválidos</p> -->
+            <p>Não possui uma conta? <a href="usuario.php?fun=cadastrar" class="link-escuro">Cadastre-se aqui</a></p>
         </form>
     </div>

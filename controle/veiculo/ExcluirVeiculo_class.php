@@ -12,11 +12,12 @@ class ExcluirVeiculo{
 				$v = $dao->exibir($_GET["id"]);
 				$dao->excluir($v);
 
-				$status = "Veiculo " . $v->getNome() .  " EXCLUIDO com sucesso.";
+				$status = "Veiculo " . mb_strtoupper($v->getNome(), 'UTF-8') .  " excluido com sucesso.";
 
 				$lista = $dao->listar();
 				if($lista==NULL){
-					echo "<h1> Não há veículos cadastrados! <h1/>";
+					echo "<h1 class='titulo'> Não há veículos cadastrados! </h1>";
+					echo "<div class='espaco-grande'></div>";
 				}else{
 					include_once("visao/veiculo/listaVeiculo.php");
 				}

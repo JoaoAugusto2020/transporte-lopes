@@ -20,7 +20,7 @@ class CadastrarVeiculo{
 			$dao = new VeiculoDao();
 			$dao->cadastrar($v);
 
-			$status = "Veiculo " . $v->getNome() .  " CADASTRADO com sucesso.";
+			$status = "Veiculo " . mb_strtoupper($v->getNome(), 'UTF-8') .  " cadastrado com sucesso.";
 
 			$lista = $dao->listar();
 

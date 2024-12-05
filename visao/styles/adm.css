@@ -1,13 +1,9 @@
-.box-login {
-    margin: 50px 0px;
-}
-
-.form-login {
+.box-adm {
     background-color: #ececec;
+    color: #0b4136;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-
+    
     padding: 20px 50px;
-    width: 250px;
-    text-align: center;
+    margin: 0px 7%;
 }

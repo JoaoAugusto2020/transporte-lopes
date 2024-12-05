@@ -18,7 +18,7 @@ class AlterarUsuario{
 			$dao = new UsuarioDAO();
 			$dao->alterar($u);
 
-			$status = "Usuario " . $u->getNomeCompleto() . " ALTERADO com sucesso.";
+			$status = "Usuario " . mb_strtoupper($u->getNomeCompleto(), 'UTF-8') . " alterado com sucesso.";
 
 			$lista = $dao->listar();
 			include_once("visao/usuario/listaUsuario.php");

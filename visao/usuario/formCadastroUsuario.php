@@ -1,18 +1,20 @@
-<h1>Cadastro de Usuário</h1>
+    <div class="box-login centralizar-div">
+        <form action="usuario.php?fun=cadastrar" method="POST" enctype="multipart/form-data" class="form-login">
+            <h1>Cadastrar</h1>
 
-<div id="container">
-    <form id="box" action="usuario.php?fun=cadastrar" method="POST" 
-    enctype="multipart/form-data">
+            <input class="input-simples" type="text" name="nome" id="nome" placeholder="Nome"/> <br>
+            <input class="input-simples" type="email" name="email" id="email" placeholder="E-mail"/> <br>
+            <input class="input-simples" type="text" name="cpf" id="cpf" placeholder="CPF"/> <br>
+            <div class="input-box input-box-simples">
+                <input class="input-simples" type="password" name="senha" id="senha" placeholder="Senha"/>
+                <img src="visao/imagens/icones/olho-aberto.png" id="olho">
+            </div> <br>
+            <br>
 
-        <input type="text" name="nome" id="nome" placeholder="Nome completo do Usuário"/>
-        <input type="email" name="email" id="email" placeholder="E-mail"/>
-        <input type="text" name="cpf" id="cpf" placeholder="CPF"/>
-        <input type="password" name="senha" id="senha" placeholder="Senha"/> <img src="visao/imagens/icones/olho-aberto.png" id="olho" width="30px" height="30px">
-
-        <input type="submit" name="enviar" value="enviar" />
-        
-        <p id="errorMessage" style="color: red; display: none">Usuário ou senha inválidos</p> </p>
-        <p>Já possui uma conta? <a href="index.php?fun=entrar" id="link">Entre aqui</a></p>
-    </form>  
-</div>
+            <button class="btn-escuro" type="submit" name="enviar" value="enviar">Cadastrar</button> <br><br>
+            
+            <!-- <p id="errorMessage" style="color: red; display: none">Usuário ou senha inválidos</p> </p> -->
+            <p>Já possui uma conta? <a href="index.php?fun=entrar" class="link-escuro">Entre aqui</a></p>
+        </form>  
+    </div>
 

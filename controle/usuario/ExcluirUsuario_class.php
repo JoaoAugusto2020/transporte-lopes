@@ -12,11 +12,12 @@ class ExcluirUsuario{
 				$u = $dao->exibir($_GET["id"]); //encapsulando o id dentro de um obj Usuario
 				$dao->excluir($u);
 
-				$status = "Usuario " . $u->getNomeCompleto() . " EXCLUIDO com sucesso.";
+				$status = "Usuario " . mb_strtoupper($u->getNomeCompleto(), 'UTF-8') . " excluido com sucesso.";
 
 				$lista = $dao->listar();
 				if($lista==NULL){
-					echo "<h1> Não há usuários cadastrados! <h1/>";
+					echo "<h1 class='titulo'> Não há usuários cadastrados! </h1>";
+					echo "<div class='espaco-grande'></div>";
 				}else{
 					include_once("visao/usuario/listaUsuario.php");
 				}
