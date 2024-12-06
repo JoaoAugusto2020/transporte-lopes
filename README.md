@@ -16,4 +16,6 @@ Desenvolvimento de Aplicações WEB I - Trabalho
   </tr>
 </table>
 
-<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
+## Time de desenvolvedores
+- **Bruno Eugênio**
+- **João Augusto**
