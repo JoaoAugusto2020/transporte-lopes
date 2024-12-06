@@ -1,7 +1,9 @@
 # Transporte Lopes
-Desenvolvimento de Aplicações WEB I - Trabalho
 
-> Status do projeto: Finalizado ✅
+> Disciplina: Desenvolvimento de Aplicações WEB I <br>
+> Docente: Cintia Carvalho Oliveira <br>
+> Discentes: Bruno Eugênio e João Augusto <br>
+> Status do projeto: Finalizado ✅ <br>
 > Última atulização: 06/12/2024
 
 <br>
@@ -15,7 +17,3 @@ Desenvolvimento de Aplicações WEB I - Trabalho
     <th><img src="https://github.com/user-attachments/assets/89b025f0-e8b0-4a51-829a-4f2de2402937" height="40" alt="php logo"  /><br>PHP</th>
   </tr>
 </table>
-
-## Time de desenvolvedores
-- **Bruno Eugênio**
-- **João Augusto**
