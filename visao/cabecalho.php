@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="visao/styles/home.css" />
     <link rel="stylesheet" href="visao/styles/login.css" />
     <link rel="stylesheet" href="visao/styles/adm.css" />
+    <link rel="stylesheet" href="visao/styles/sobre.css" />
 
     <link rel="icon" type="image/x-icon" href="visao/imagens/logotipos/logotipo-branco.png">
     <title>Transporte Lopes</title>
@@ -19,8 +20,8 @@
         <a href="index.php"><img src="visao/imagens/logotipos/logotipo-branco.png" alt="logotipo" id="logotipo"></a>
         
         <nav id="navbar">
-            <a href="veiculo.php?fun=listar" class="btn-navbar">Catálogo</a>
-            <a href="veiculo.php?fun=listarDisponiveis" class="btn-navbar">Alugar Veículo</a>
+            <a href="veiculo.php?fun=listarCatalogo" class="btn-navbar">Catálogo</a>
+            <a href="veiculo.php?fun=listarAlugar" class="btn-navbar">Alugar Veículo</a>
             <a href="index.php?fun=sobre" class="btn-navbar">Sobre Nós</a>
             <a href="index.php?fun=adm" class="btn-navbar">Administrativo</a>
             <a href="index.php?fun=entrar" class="btn-navbar">Autenticar</a>

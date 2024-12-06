@@ -9,20 +9,18 @@ if(isset($_GET["fun"])){
 	$fun = $_GET["fun"];
 	
 	if($fun == "adm"){		
-		include_once("visao/paginas/adm.html");		
+		include_once("visao/paginas/adm.html");	
 	} else if($fun == "entrar"){
 		include_once("visao/paginas/entrar.html");
-	} else {
+	} else if($fun == "sobre"){
+		include_once("visao/paginas/sobre.html");
+	}else {
 		include_once("visao/paginas/home.html");		
+
 	}
-		
 } else {
 	include_once("visao/paginas/home.html");
 }
-
-//include_once("controle/ListarUsuario_class.php")
-//include_once("controle/ListarVeiculo_class.php");
-//$index = new ListarVeiculo();
 
 //atribuição de responsabilidade
 //o controle sabe como exibir a lista de veiculos

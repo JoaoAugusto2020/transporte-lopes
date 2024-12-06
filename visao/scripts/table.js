@@ -18,3 +18,5 @@ document.getElementById("#tabelaOlho").addEventListener("click", function() {
 
     valor++;
 });
+
+// NÃO FUNCIONA AINDA

@@ -1,5 +1,4 @@
 	<h1 class="titulo">Usuários</h1>
-	<div class="espaco-grande"></div>
 
 	<?php
 		if (isset($status)) {
@@ -37,10 +36,7 @@
 
 					echo "<TD>" .$u->getEmail(). "</TD>";
 					echo "<TD>" .$u->getCpf(). "</TD>";
-					echo "<TD>".
-						"<p id='mascara'>********</p>".
-						"<p id='tabelaSenha'>".$u->getSenha()."</p>".
-					"</TD>";
+					echo "<TD>" .$u->getSenha(). "</TD>";
 
 					echo "<TD><A href=usuario.php?fun=alterar&id=" .$u->getIdusuario(). "><img src='visao/imagens/icones/update.png' width='30px'/> </A></TD>";
 

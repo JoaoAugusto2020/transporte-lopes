@@ -1,4 +1,4 @@
-	<h1 class="titulo">Catálogo</h1>
+	<h1 class="titulo">Veículos</h1>
 
 	<?php
 		if (isset($status)) {

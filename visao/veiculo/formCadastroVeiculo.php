@@ -22,5 +22,5 @@
 		</form>
 
 		<br><br><br>
-		<A class="link-escuro" href="veiculo.php?fun=listar"> Voltar </A>
+		<A class="link-escuro" href="veiculo.php?fun=listar"> Veículos </A> <br>
 

@@ -1,4 +1,4 @@
-		<H1>Veiculo <?php echo $v->getNome(); ?> </H1>
+		<H1>Veículo <?php echo $v->getNome(); ?> </H1>
 		<UL>
 			<LI>Nome: <?php echo $v->getNome(); ?></LI>
 			<LI>Marca: <?php echo $v->getMarca(); ?></LI>

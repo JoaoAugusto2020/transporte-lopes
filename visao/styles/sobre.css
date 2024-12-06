@@ -1,0 +1,38 @@
+#grid-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-sobre{
+    background-color: #ececec;
+    color: #0b4136;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    height: 350px;
+    width: 350px;
+    padding: 25px 30px;
+    margin: 20px;
+}
+
+.perfil {
+    display: inline-block; 
+    text-align: center; 
+    margin: 10px; 
+}
+
+.imgsobre {
+    width: 400px;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}

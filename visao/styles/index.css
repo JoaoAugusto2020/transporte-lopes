@@ -22,13 +22,32 @@ html, body {
     margin-top: 75px;
     text-align: center;
 }
+.titulo-2 {
+    font-size: 30px;
+    margin-top: 15px;
+}
 
 .paragrafo{
     margin-top: 25px;
 }
+.paragrafo-sm{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.paragrafo-md{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.paragrafo-lg{
+    margin-top: 25px;
+    font-size: 30px;
+}
 
 .centralizado {
     text-align: center;
+}
+.justificado {
+    text-align: justify;
 }
 
 .centralizar-div {
@@ -295,6 +314,8 @@ footer div div {
     width: 20px;
     height: 20px;
     margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #copyright {
@@ -304,14 +325,4 @@ footer div div {
     font-size: xx-small;
     margin: 0px;
     padding: 0px;
-}
-
-
-
-/* Teste de esconder senha */
-#mascara {
-    display: none;
-}
-#tabelaSenha {
-    display: block;
 }

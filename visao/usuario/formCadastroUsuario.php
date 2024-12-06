@@ -14,7 +14,7 @@
             <button class="btn-escuro" type="submit" name="enviar" value="enviar">Cadastrar</button> <br><br>
             
             <!-- <p id="errorMessage" style="color: red; display: none">Usuário ou senha inválidos</p> </p> -->
-            <p>Já possui uma conta? <a href="index.php?fun=entrar" class="link-escuro">Entre aqui</a></p>
+            <p>Já possui uma conta? <br> <a href="index.php?fun=entrar" class="link-escuro">Entre aqui</a></p>
         </form>  
     </div>
 
